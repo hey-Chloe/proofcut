@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>ProofCut — source-linked creator copy</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="#workspace" aria-label="ProofCut home">ProofCut</a>
+    <div class="truth-strip" aria-label="Processing boundary">
+      <span class="truth-dot" aria-hidden="true"></span>
+      Local only · deterministic · no model or upload
+    </div>
+  </header>
+
+  <main id="workspace" class="workspace">
+    <section class="input-rail" aria-labelledby="input-heading">
+      <div class="rail-intro">
+        <p class="eyebrow">Transcript workspace</p>
+        <h1 id="input-heading">Turn source lines into reviewable creator copy.</h1>
+        <p>Every field keeps its exact quote and time range. A pass means only that the local lexical checks found no configured issue.</p>
+      </div>
+
+      <div class="field-group">
+        <div class="field-heading">
+          <label for="transcript">Transcript</label>
+          <span id="input-meta">JSON or timestamped/plain text · 1 MiB max</span>
+        </div>
+        <textarea id="transcript" spellcheck="false" aria-describedby="input-meta input-error" placeholder="[00:00-00:06] Paste a source sentence here."></textarea>
+        <p id="input-error" class="error" role="alert" hidden></p>
+      </div>
+
+      <div class="input-actions">
+        <button id="run" class="primary" type="button">Generate evidence pack</button>
+        <input id="file" type="file" accept=".json,.txt,application/json,text/plain">
+        <label class="file-action" for="file">Import .json or .txt</label>
+        <button id="example" class="text-action" type="button">Restore included example</button>
+      </div>
+
+      <aside class="boundary-note" aria-labelledby="boundary-heading">
+        <h2 id="boundary-heading">What this demo proves</h2>
+        <p>It runs the same local pipeline as the CLI and exports inspectable JSON/CSV. It does not prove factuality, creator preference, time saved, production reliability or an award.</p>
+      </aside>
+    </section>
+
+    <section class="evidence-stage" aria-labelledby="results-heading">
+      <div class="stage-heading">
+        <div>
+          <p class="eyebrow">Evidence stage</p>
+          <h2 id="results-heading">Content pack</h2>
+        </div>
+        <div class="downloads" aria-label="Download generated artifacts">
+          <button id="download-json" type="button" disabled>Download JSON</button>
+          <button id="download-csv" type="button" disabled>Download CSV</button>
+        </div>
+      </div>
+
+      <div id="status" class="status" role="status" aria-live="polite">
+        <span class="status-mark" aria-hidden="true">→</span>
+        <span>Loading the included self-authored example…</span>
+      </div>
+
+      <dl id="summary" class="summary" hidden>
+        <div><dt>Release gate</dt><dd id="summary-release">—</dd></div>
+        <div><dt>Segments</dt><dd id="summary-segments">—</dd></div>
+        <div><dt>Timestamp mode</dt><dd id="summary-time">—</dd></div>
+        <div><dt>Unsupported fields</dt><dd id="summary-risk">—</dd></div>
+      </dl>
+
+      <div id="empty" class="empty">
+        <p class="empty-index">00</p>
+        <h3>No evidence pack yet</h3>
+        <p>Load the example or provide a transcript, then run the real offline pipeline.</p>
+      </div>
+      <div id="segments" class="segments" aria-label="Generated content segments"></div>
+    </section>
+  </main>
+
+  <template id="segment-template">
+    <article class="segment">
+      <header class="segment-header">
+        <div>
+          <p class="segment-id"></p>
+          <h3 class="segment-title"></h3>
+        </div>
+        <span class="gate"></span>
+      </header>
+      <div class="source-block">
+        <p class="source-label"><span class="time"></span><span>Exact source span</span></p>
+        <blockquote class="quote"></blockquote>
+      </div>
+      <dl class="content-fields"></dl>
+    </article>
+  </template>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
