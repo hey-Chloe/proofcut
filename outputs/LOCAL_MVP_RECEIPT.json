@@ -1,0 +1,263 @@
+{
+  "benchmark": {
+    "claim_boundary": "Not a production throughput, model latency, network latency, or user time-saving measurement.",
+    "fixture_count": 6,
+    "fixture_set_sha256": "3b6732458270b564b81b92b293b03036c44d3b2221b4fb97d027f94feb679f54",
+    "iterations": 100,
+    "max_batch_ms": 4.463041,
+    "median_batch_ms": 1.754938,
+    "min_batch_ms": 1.588875,
+    "output_bytes_per_six_fixture_batch": 151565,
+    "p95_batch_ms": 2.387833,
+    "schema_version": "proofcut-local-benchmark-v1",
+    "scope": "SIX_SELF_AUTHORED_FIXTURES_IN_MEMORY_LOCAL_MACHINE_ONLY",
+    "total_pipeline_runs": 600
+  },
+  "benchmark_report_sha256": "18eb7115943f61e301ef738f6cd2eacef57082618bbe323d0d28afafb7d20d92",
+  "claim_boundary": {
+    "competition_result": "UNCLAIMED",
+    "deployment": "NOT_DEPLOYED",
+    "official_submission": "NOT_SUBMITTED",
+    "paid_api": "NOT_CALLED",
+    "public_repository": "NOT_CREATED",
+    "registration": "NOT_PERFORMED"
+  },
+  "eval_report_sha256": "0d02282a5e650723b706bda52dd743cf10f35d06f6d5cdecf2b0cf41710f394a",
+  "file_count": 41,
+  "files": [
+    {
+      "bytes": 171,
+      "path": "proofcut/__init__.py",
+      "sha256": "be1156dd319bb44e920a639fb67b6c8c7895b47f4ea9ec0c65c98fce980ebdf3"
+    },
+    {
+      "bytes": 947,
+      "path": "proofcut/cli.py",
+      "sha256": "cac82b01c2f62131712fb0d309fcb04a7f60a2fc7f299074f1010f589342d909"
+    },
+    {
+      "bytes": 6741,
+      "path": "proofcut/eval.py",
+      "sha256": "b5349c8085bf29e004724194d228f7fb8e959dddfb82f5813bd1811559608e98"
+    },
+    {
+      "bytes": 1254,
+      "path": "proofcut/export.py",
+      "sha256": "4556615841f9fae130aed123c6061e2170d79b8b85c8f7538033b0069eda4c82"
+    },
+    {
+      "bytes": 4206,
+      "path": "proofcut/io.py",
+      "sha256": "ea778dd2f52f2622e68f4d35c8413c4661f1b84da57017349169bd3130b6a729"
+    },
+    {
+      "bytes": 5395,
+      "path": "proofcut/pipeline.py",
+      "sha256": "3393d044d8f8c5f8f6d0b16b6d2a40f53633e7fd6ef656caa8f47b01ac5503ed"
+    },
+    {
+      "bytes": 2193,
+      "path": "proofcut/risk.py",
+      "sha256": "373d803a1edfa15a64dbfc1daa37f1a3a49b7ae11ef91988a09013d51876a2c2"
+    },
+    {
+      "bytes": 1772,
+      "path": "proofcut/text.py",
+      "sha256": "cbb43826690395e12c72bdffad068e2147d0f1e11aec01365b45eb74f58d914c"
+    },
+    {
+      "bytes": 5966,
+      "path": "proofcut/web.py",
+      "sha256": "eec006813d590067442e2829c71ce299da505a75636e356ca782a38bd03bb947"
+    },
+    {
+      "bytes": 8183,
+      "path": "proofcut/web_assets/app.css",
+      "sha256": "4626038cfa3028fb1fde2f877adaa5410971de7e76cf45efe3ef82c8a20e222b"
+    },
+    {
+      "bytes": 6518,
+      "path": "proofcut/web_assets/app.js",
+      "sha256": "944abfdf169ce4c0641cee1e2ae9dafd10e67916e53bec2b910308effa7dd322"
+    },
+    {
+      "bytes": 935,
+      "path": "proofcut/web_assets/example.json",
+      "sha256": "ce300f9b0f8ca04113513560a9d483d9a063b3288c8ab955daabfa98a94c6b2c"
+    },
+    {
+      "bytes": 4224,
+      "path": "proofcut/web_assets/index.html",
+      "sha256": "53895258f2b3c4e6523250f9ec860c78afd485dd8ae8b9c5d913c4c42c0e4fbc"
+    },
+    {
+      "bytes": 1141,
+      "path": "fixtures/01_creator_claims.json",
+      "sha256": "873b1ed6ea50b899a4c5822e74c878fb25630fd649e5c561da382748253189ef"
+    },
+    {
+      "bytes": 1121,
+      "path": "fixtures/02_agent_incident.json",
+      "sha256": "394ba5708db16423e4a3e87f6ed9c389d3d49c5db9eb4c5725955765848a073c"
+    },
+    {
+      "bytes": 1159,
+      "path": "fixtures/03_retrieval_eval.json",
+      "sha256": "1b33ce10ea3eb5013b78272168ac071c58abbc0df98608a1746f0177cdedbe54"
+    },
+    {
+      "bytes": 1089,
+      "path": "fixtures/04_media_qa.json",
+      "sha256": "f6508d4dcafadf59cc8039908e4e2ad7407454c21ad07087ea2beaac806eced0"
+    },
+    {
+      "bytes": 1177,
+      "path": "fixtures/05_compute_market.json",
+      "sha256": "908806ce3b3420bbe529905ae6145d8034e084f84c014bf4b148c68192a46a60"
+    },
+    {
+      "bytes": 1073,
+      "path": "fixtures/06_english_creator.json",
+      "sha256": "6575acfb2ea051abb1ca536cf506d0144b28839fc6ec19adf592d3720705d8a4"
+    },
+    {
+      "bytes": 1576,
+      "path": "tests/test_export_eval.py",
+      "sha256": "9a612fdd455500335e1ddd272a88ffe226496ece99ed8ebc5a1923728fbc006b"
+    },
+    {
+      "bytes": 2419,
+      "path": "tests/test_io.py",
+      "sha256": "65df7a5bd41492638be31b013385cf2828af28e9f9d00a2a80d52bf655e5d1e6"
+    },
+    {
+      "bytes": 2183,
+      "path": "tests/test_pipeline.py",
+      "sha256": "67146d0cf7e9792be71c71116ccc3ffad0472b3a88d86c08d0e14ba3035fa231"
+    },
+    {
+      "bytes": 1859,
+      "path": "tests/test_publication.py",
+      "sha256": "54e6c3a9d16832d8c8655dfd9b88e4eae46d605037b05cfbf07558508d31135a"
+    },
+    {
+      "bytes": 1255,
+      "path": "tests/test_risk.py",
+      "sha256": "ddb732f0bedb16df5160644de7ee0ce0185b6f2fa0bca546b78a587c53063879"
+    },
+    {
+      "bytes": 3286,
+      "path": "tests/test_web.py",
+      "sha256": "905d71ea8d7436dbd53f1c7aad653dd0be4febb091c100d78b1ff3e269665cfa"
+    },
+    {
+      "bytes": 2716,
+      "path": "scripts/benchmark.py",
+      "sha256": "80da11524603ccf24015fb9cf2a639847d97d93f444812ee526f697a0ee4f2d3"
+    },
+    {
+      "bytes": 5486,
+      "path": "scripts/build_publication_archive.py",
+      "sha256": "1a8eee6b3e0ddfa3c4e5fe9942ed6bf06e083f2f5d71cb5d4d43f15513b3c306"
+    },
+    {
+      "bytes": 5654,
+      "path": "scripts/build_publication_manifest.py",
+      "sha256": "38b2b7a2d3367f39acfc628081fbfdcf1c51f7bb7c29e3643beb510bca292da3"
+    },
+    {
+      "bytes": 3802,
+      "path": "scripts/build_receipt.py",
+      "sha256": "a93d9baaf8f4366cc93fb9ff8d1c1da0f2781f4829a82d371c766c1cc556296c"
+    },
+    {
+      "bytes": 5925,
+      "path": "scripts/submission_preflight.py",
+      "sha256": "411ce230a7088ae19eb17c75c2fd8febbf1f3ce98d3fe07994cd61ac476b54a3"
+    },
+    {
+      "bytes": 875,
+      "path": ".gitignore",
+      "sha256": "ed92b687c62150957d1a494ce58fd0475bf91abc7e869424f6a57b960a6918f0"
+    },
+    {
+      "bytes": 4345,
+      "path": "README.md",
+      "sha256": "cc2f76df755d7bcdbc7ab088d412a4600e945b7a1da6b5f8c614975d1a506447"
+    },
+    {
+      "bytes": 2219,
+      "path": "PROVENANCE.md",
+      "sha256": "cf0192037306695f1b1907131380daf832bf15909c3646e3cec682502eb4f7de"
+    },
+    {
+      "bytes": 1933,
+      "path": "CLAIM_BOUNDARY.md",
+      "sha256": "340f46763976c88ab5d67f55f5f192be117c4788c323e2521ebccb93a217955e"
+    },
+    {
+      "bytes": 3189,
+      "path": "DESIGN_BRIEF.md",
+      "sha256": "af1171d220ab0325a3aab24fa85ec7a96035f1a880c8c2d5cd637abb2dae3f2f"
+    },
+    {
+      "bytes": 4133,
+      "path": "DEVPOST_SUBMISSION.md",
+      "sha256": "4bfa85fa0a2ce1c3d17eb5fec84c29280a99dd6821f2ed858a5ab2eb7c709406"
+    },
+    {
+      "bytes": 2270,
+      "path": "DEMO_SCRIPT_90S.md",
+      "sha256": "89bca44a15432ca9628a9f4f302e9c8b5b98cd4fc4a972b2b337744d1e8aec25"
+    },
+    {
+      "bytes": 1903,
+      "path": "OFFICIAL_REQUIREMENTS_SNAPSHOT.md",
+      "sha256": "d40d16a1c53943b93f7d1dca54cc5603049699f30773b8701f15cdcd2ede190e"
+    },
+    {
+      "bytes": 4680,
+      "path": "VISUAL_QA_REPORT.md",
+      "sha256": "8c07ea2012944e8e7c9045b089847932c3f29f9f08163f5c0ec9c921d35840db"
+    },
+    {
+      "bytes": 552,
+      "path": "pyproject.toml",
+      "sha256": "d4c888b2806941132d05648f30fc561af5fb8cae39123d7e91a89762e653e610"
+    },
+    {
+      "bytes": 1060,
+      "path": "LICENSE",
+      "sha256": "bd5b619b0752fc11e318cff8acb7680ae77c881dba53ca7ef4a8e7c49a72f53a"
+    }
+  ],
+  "manifest_sha256": "c783ae9b43a0d680df8b5f5f7a93ad2852935f27e5858dc57b8d1251ae7e26b2",
+  "metrics": {
+    "determinism_rate": 1.0,
+    "generated_field_completeness": 1.0,
+    "risk_probe_precision": 1.0,
+    "risk_probe_recall": 1.0,
+    "source_span_validity": 1.0,
+    "supported_generated_field_rate": 1.0,
+    "supported_probe_specificity": 1.0,
+    "unsupported_generated_field_rate": 0.0
+  },
+  "package_smoke": {
+    "claim_boundary": "This receipt does not prove a public repository, deployment, external installation, production reliability, official submission, or award.",
+    "installed_import": "PASS",
+    "installed_pipeline_segment_count": 1,
+    "installed_web_asset_bytes": 4224,
+    "package_version": "0.2.0",
+    "python_version": "3.12.14",
+    "schema_version": "proofcut-package-smoke-v1",
+    "scope": "LOCAL_WHEEL_BUILD_AND_ISOLATED_INSTALL_ONLY",
+    "status": "PASS",
+    "wheel_entry_count": 19,
+    "wheel_filename": "proofcut-0.2.0-py3-none-any.whl",
+    "wheel_sha256": "4e8cc043f55a281eaa973b64e2804e0d8768eb40b04d7e95197eeb5254f15a81"
+  },
+  "package_smoke_report_sha256": "9147fd5bdb88b76062bdcb900abca1f36c0de71c6895c50809dd5dd7c56ec484",
+  "schema_version": "proofcut-local-mvp-receipt-v1",
+  "scope": "LOCAL_DETERMINISTIC_OFFLINE_ONLY",
+  "status": "PASS"
+}

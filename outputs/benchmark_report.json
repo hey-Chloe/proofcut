@@ -1,0 +1,14 @@
+{
+  "claim_boundary": "Not a production throughput, model latency, network latency, or user time-saving measurement.",
+  "fixture_count": 6,
+  "fixture_set_sha256": "3b6732458270b564b81b92b293b03036c44d3b2221b4fb97d027f94feb679f54",
+  "iterations": 100,
+  "max_batch_ms": 4.463041,
+  "median_batch_ms": 1.754938,
+  "min_batch_ms": 1.588875,
+  "output_bytes_per_six_fixture_batch": 151565,
+  "p95_batch_ms": 2.387833,
+  "schema_version": "proofcut-local-benchmark-v1",
+  "scope": "SIX_SELF_AUTHORED_FIXTURES_IN_MEMORY_LOCAL_MACHINE_ONLY",
+  "total_pipeline_runs": 600
+}

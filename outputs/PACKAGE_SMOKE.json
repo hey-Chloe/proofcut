@@ -1,0 +1,14 @@
+{
+  "schema_version": "proofcut-package-smoke-v1",
+  "status": "PASS",
+  "python_version": "3.12.14",
+  "package_version": "0.2.0",
+  "wheel_filename": "proofcut-0.2.0-py3-none-any.whl",
+  "wheel_sha256": "4e8cc043f55a281eaa973b64e2804e0d8768eb40b04d7e95197eeb5254f15a81",
+  "wheel_entry_count": 19,
+  "installed_import": "PASS",
+  "installed_web_asset_bytes": 4224,
+  "installed_pipeline_segment_count": 1,
+  "scope": "LOCAL_WHEEL_BUILD_AND_ISOLATED_INSTALL_ONLY",
+  "claim_boundary": "This receipt does not prove a public repository, deployment, external installation, production reliability, official submission, or award."
+}

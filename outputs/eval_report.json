@@ -1,0 +1,419 @@
+{
+  "aggregate": {
+    "deterministic_fixture_count": 6,
+    "field_present": 60,
+    "field_total": 60,
+    "fixture_count": 6,
+    "generated_supported": 60,
+    "generated_total": 60,
+    "probe_fn": 0,
+    "probe_fp": 0,
+    "probe_tn": 6,
+    "probe_tp": 6,
+    "segment_count": 12,
+    "span_pass": 12,
+    "span_total": 12
+  },
+  "claim_boundary": "No user study, creator time saving, production traffic, external model quality, or competition outcome is measured.",
+  "fixtures": [
+    {
+      "deterministic_byte_equal": true,
+      "field_present": 10,
+      "field_total": 10,
+      "fixture": "01_creator_claims.json",
+      "fixture_sha256": "873b1ed6ea50b899a4c5822e74c878fb25630fd649e5c561da382748253189ef",
+      "generated_supported": 10,
+      "generated_total": 10,
+      "pack_sha256": "5d3c9b030cb7fb200cb728a1b20208c67fa83c4c691720a3f043f4a4268f61f9",
+      "probe_confusion": {
+        "fn": 0,
+        "fp": 0,
+        "tn": 1,
+        "tp": 1
+      },
+      "probe_results": [
+        {
+          "expected_supported": true,
+          "result": {
+            "claim": "我们会给每个数字保留原文时间戳。",
+            "matched_terms": [
+              "个数",
+              "们会",
+              "会给",
+              "保留",
+              "字保",
+              "我们",
+              "我们会给每个数字保留原文时间戳",
+              "文时",
+              "时间",
+              "每个",
+              "留原",
+              "给每",
+              "间戳"
+            ],
+            "missing_numbers": [],
+            "risk_codes": [],
+            "supported": true,
+            "term_overlap": 1.0
+          },
+          "text": "我们会给每个数字保留原文时间戳。"
+        },
+        {
+          "expected_supported": false,
+          "result": {
+            "claim": "这个流程能节省90%的编辑时间。",
+            "matched_terms": [
+              "个流",
+              "时间",
+              "流程",
+              "编辑",
+              "这个"
+            ],
+            "missing_numbers": [],
+            "risk_codes": [
+              "LOW_SOURCE_OVERLAP"
+            ],
+            "supported": false,
+            "term_overlap": 0.384615
+          },
+          "text": "这个流程能节省90%的编辑时间。"
+        }
+      ],
+      "segment_count": 2,
+      "span_pass": 2,
+      "span_total": 2
+    },
+    {
+      "deterministic_byte_equal": true,
+      "field_present": 10,
+      "field_total": 10,
+      "fixture": "02_agent_incident.json",
+      "fixture_sha256": "394ba5708db16423e4a3e87f6ed9c389d3d49c5db9eb4c5725955765848a073c",
+      "generated_supported": 10,
+      "generated_total": 10,
+      "pack_sha256": "aadf1a9a1754ecea69c1252ab985047b073564ad82bb582fe4711b5647b0fce8",
+      "probe_confusion": {
+        "fn": 0,
+        "fp": 0,
+        "tn": 1,
+        "tp": 1
+      },
+      "probe_results": [
+        {
+          "expected_supported": true,
+          "result": {
+            "claim": "工具调用成功不代表任务成功。",
+            "matched_terms": [
+              "不代",
+              "代表",
+              "任务",
+              "具调",
+              "功不",
+              "务成",
+              "工具",
+              "工具调用成功不代表任务成功",
+              "成功",
+              "用成",
+              "表任",
+              "调用"
+            ],
+            "missing_numbers": [],
+            "risk_codes": [],
+            "supported": true,
+            "term_overlap": 1.0
+          },
+          "text": "工具调用成功不代表任务成功。"
+        },
+        {
+          "expected_supported": false,
+          "result": {
+            "claim": "该系统已经服务一万名真实客户。",
+            "matched_terms": [
+              "实客",
+              "客户",
+              "服务",
+              "真实"
+            ],
+            "missing_numbers": [],
+            "risk_codes": [
+              "LOW_SOURCE_OVERLAP"
+            ],
+            "supported": false,
+            "term_overlap": 0.285714
+          },
+          "text": "该系统已经服务一万名真实客户。"
+        }
+      ],
+      "segment_count": 2,
+      "span_pass": 2,
+      "span_total": 2
+    },
+    {
+      "deterministic_byte_equal": true,
+      "field_present": 10,
+      "field_total": 10,
+      "fixture": "03_retrieval_eval.json",
+      "fixture_sha256": "1b33ce10ea3eb5013b78272168ac071c58abbc0df98608a1746f0177cdedbe54",
+      "generated_supported": 10,
+      "generated_total": 10,
+      "pack_sha256": "64d616dc54c2f41a6731c0ac304414f093db7cabe1a2c7d1fffb23e89ce61c78",
+      "probe_confusion": {
+        "fn": 0,
+        "fp": 0,
+        "tn": 1,
+        "tp": 1
+      },
+      "probe_results": [
+        {
+          "expected_supported": true,
+          "result": {
+            "claim": "评测要保存查询、候选、排序结果和版本标识。",
+            "matched_terms": [
+              "保存",
+              "候选",
+              "和版",
+              "存查",
+              "序结",
+              "排序",
+              "排序结果和版本标识",
+              "本标",
+              "果和",
+              "查询",
+              "标识",
+              "测要",
+              "版本",
+              "结果",
+              "要保",
+              "评测",
+              "评测要保存查询"
+            ],
+            "missing_numbers": [],
+            "risk_codes": [],
+            "supported": true,
+            "term_overlap": 1.0
+          },
+          "text": "评测要保存查询、候选、排序结果和版本标识。"
+        },
+        {
+          "expected_supported": false,
+          "result": {
+            "claim": "复杂方法保证在所有数据集上更好。",
+            "matched_terms": [
+              "复杂",
+              "数据",
+              "方法",
+              "杂方"
+            ],
+            "missing_numbers": [],
+            "risk_codes": [
+              "UNSUPPORTED_ABSOLUTE",
+              "LOW_SOURCE_OVERLAP"
+            ],
+            "supported": false,
+            "term_overlap": 0.266667
+          },
+          "text": "复杂方法保证在所有数据集上更好。"
+        }
+      ],
+      "segment_count": 2,
+      "span_pass": 2,
+      "span_total": 2
+    },
+    {
+      "deterministic_byte_equal": true,
+      "field_present": 10,
+      "field_total": 10,
+      "fixture": "04_media_qa.json",
+      "fixture_sha256": "f6508d4dcafadf59cc8039908e4e2ad7407454c21ad07087ea2beaac806eced0",
+      "generated_supported": 10,
+      "generated_total": 10,
+      "pack_sha256": "bb6060a84827229ced049c010b5987c99c6706ccfaecc02f7240a1113146deb1",
+      "probe_confusion": {
+        "fn": 0,
+        "fp": 0,
+        "tn": 1,
+        "tp": 1
+      },
+      "probe_results": [
+        {
+          "expected_supported": true,
+          "result": {
+            "claim": "还要核验音轨，而不是只看画面。",
+            "matched_terms": [
+              "不是",
+              "只看",
+              "是只",
+              "核验",
+              "看画",
+              "而不",
+              "而不是只看画面",
+              "要核",
+              "还要",
+              "还要核验音轨",
+              "音轨",
+              "验音"
+            ],
+            "missing_numbers": [],
+            "risk_codes": [],
+            "supported": true,
+            "term_overlap": 1.0
+          },
+          "text": "还要核验音轨，而不是只看画面。"
+        },
+        {
+          "expected_supported": false,
+          "result": {
+            "claim": "这套流程完全消除了所有导出错误。",
+            "matched_terms": [
+              "导出"
+            ],
+            "missing_numbers": [],
+            "risk_codes": [
+              "UNSUPPORTED_ABSOLUTE",
+              "LOW_SOURCE_OVERLAP"
+            ],
+            "supported": false,
+            "term_overlap": 0.066667
+          },
+          "text": "这套流程完全消除了所有导出错误。"
+        }
+      ],
+      "segment_count": 2,
+      "span_pass": 2,
+      "span_total": 2
+    },
+    {
+      "deterministic_byte_equal": true,
+      "field_present": 10,
+      "field_total": 10,
+      "fixture": "05_compute_market.json",
+      "fixture_sha256": "908806ce3b3420bbe529905ae6145d8034e084f84c014bf4b148c68192a46a60",
+      "generated_supported": 10,
+      "generated_total": 10,
+      "pack_sha256": "6da79ee454c020d6260fcd621b344d887714874981a827c1da378ce85749b449",
+      "probe_confusion": {
+        "fn": 0,
+        "fp": 0,
+        "tn": 1,
+        "tp": 1
+      },
+      "probe_results": [
+        {
+          "expected_supported": true,
+          "result": {
+            "claim": "训练任务需要两张 GPU、每张至少四十八 GB 显存。",
+            "matched_terms": [
+              "gb",
+              "gpu",
+              "两张",
+              "任务",
+              "务需",
+              "十八",
+              "四十",
+              "少四",
+              "张至",
+              "显存",
+              "每张",
+              "每张至少四十八",
+              "练任",
+              "至少",
+              "要两",
+              "训练",
+              "训练任务需要两张",
+              "需要"
+            ],
+            "missing_numbers": [],
+            "risk_codes": [],
+            "supported": true,
+            "term_overlap": 1.0
+          },
+          "text": "训练任务需要两张 GPU、每张至少四十八 GB 显存。"
+        },
+        {
+          "expected_supported": false,
+          "result": {
+            "claim": "平台目前拥有5000张真实GPU。",
+            "matched_terms": [
+              "gpu"
+            ],
+            "missing_numbers": [],
+            "risk_codes": [
+              "LOW_SOURCE_OVERLAP"
+            ],
+            "supported": false,
+            "term_overlap": 0.090909
+          },
+          "text": "平台目前拥有5000张真实GPU。"
+        }
+      ],
+      "segment_count": 2,
+      "span_pass": 2,
+      "span_total": 2
+    },
+    {
+      "deterministic_byte_equal": true,
+      "field_present": 10,
+      "field_total": 10,
+      "fixture": "06_english_creator.json",
+      "fixture_sha256": "6575acfb2ea051abb1ca536cf506d0144b28839fc6ec19adf592d3720705d8a4",
+      "generated_supported": 10,
+      "generated_total": 10,
+      "pack_sha256": "901f66a58ca4ddf2df90975099b8b0bffa59ec943a64c703d5ffba9d00fb7e3d",
+      "probe_confusion": {
+        "fn": 0,
+        "fp": 0,
+        "tn": 1,
+        "tp": 1
+      },
+      "probe_results": [
+        {
+          "expected_supported": true,
+          "result": {
+            "claim": "Editors need the source timestamp and quote.",
+            "matched_terms": [
+              "editors",
+              "need",
+              "quote"
+            ],
+            "missing_numbers": [],
+            "risk_codes": [],
+            "supported": true,
+            "term_overlap": 1.0
+          },
+          "text": "Editors need the source timestamp and quote."
+        },
+        {
+          "expected_supported": false,
+          "result": {
+            "claim": "This workflow always doubles audience growth.",
+            "matched_terms": [],
+            "missing_numbers": [],
+            "risk_codes": [
+              "UNSUPPORTED_ABSOLUTE",
+              "LOW_SOURCE_OVERLAP"
+            ],
+            "supported": false,
+            "term_overlap": 0.0
+          },
+          "text": "This workflow always doubles audience growth."
+        }
+      ],
+      "segment_count": 2,
+      "span_pass": 2,
+      "span_total": 2
+    }
+  ],
+  "metrics": {
+    "determinism_rate": 1.0,
+    "generated_field_completeness": 1.0,
+    "risk_probe_precision": 1.0,
+    "risk_probe_recall": 1.0,
+    "source_span_validity": 1.0,
+    "supported_generated_field_rate": 1.0,
+    "supported_probe_specificity": 1.0,
+    "unsupported_generated_field_rate": 0.0
+  },
+  "schema_version": "proofcut-eval-report-v1",
+  "scope": "SELF_AUTHORED_FROZEN_FIXTURES_LOCAL_OFFLINE_ONLY",
+  "status": "PASS"
+}
