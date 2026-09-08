@@ -1,0 +1,16 @@
+{
+  "transcript_id": "media-qa-04",
+  "title": "短片交付前的视觉验收",
+  "language": "zh-CN",
+  "utterances": [
+    {"start_ms": 0, "end_ms": 7000, "speaker": "director", "text": "视频导出完成不等于交付完成，先检查文件存在和媒体元数据。"},
+    {"start_ms": 7000, "end_ms": 14000, "speaker": "editor", "text": "然后抽取开头、中段和结尾帧，确认字幕没有截断或遮挡。"},
+    {"start_ms": 14000, "end_ms": 21000, "speaker": "director", "text": "如果视频应该有声音，还要核验音轨，而不是只看画面。"},
+    {"start_ms": 21000, "end_ms": 28000, "speaker": "editor", "text": "最终包里要分开放成片、封面、可编辑源文件和验收记录。"},
+    {"start_ms": 28000, "end_ms": 35000, "speaker": "director", "text": "任何未观看的参考视频都不能仅凭标题猜内容。"}
+  ],
+  "risk_probes": [
+    {"text": "还要核验音轨，而不是只看画面。", "expected_supported": true},
+    {"text": "这套流程完全消除了所有导出错误。", "expected_supported": false}
+  ]
+}

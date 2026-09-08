@@ -1,0 +1,16 @@
+{
+  "transcript_id": "creator-claims-01",
+  "title": "创作者如何避免标题事实漂移",
+  "language": "zh-CN",
+  "utterances": [
+    {"start_ms": 0, "end_ms": 9000, "speaker": "host", "text": "创作者写标题时，最难的不是生成更多句子，而是确认每个数字来自哪里。"},
+    {"start_ms": 9000, "end_ms": 18000, "speaker": "guest", "text": "我们会给每个数字保留原文时间戳，找不到来源就标成待复核。"},
+    {"start_ms": 18000, "end_ms": 27000, "speaker": "host", "text": "时间戳让编辑能直接跳回原文，而不是相信一段没有证据的摘要。"},
+    {"start_ms": 27000, "end_ms": 36000, "speaker": "guest", "text": "发布前还要检查标题、字幕和简介是否加入了原文没有的结论。"},
+    {"start_ms": 36000, "end_ms": 45000, "speaker": "host", "text": "这个流程的目标是让复核可见，不自动替编辑做发布决定。"}
+  ],
+  "risk_probes": [
+    {"text": "我们会给每个数字保留原文时间戳。", "expected_supported": true},
+    {"text": "这个流程能节省90%的编辑时间。", "expected_supported": false}
+  ]
+}

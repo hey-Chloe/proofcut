@@ -1,0 +1,16 @@
+{
+  "transcript_id": "english-creator-06",
+  "title": "Evidence-first podcast repurposing",
+  "language": "en",
+  "utterances": [
+    {"start_ms": 0, "end_ms": 9000, "speaker": "host", "text": "A content pack should keep every headline connected to the original transcript."},
+    {"start_ms": 9000, "end_ms": 18000, "speaker": "guest", "text": "Editors need the source timestamp and quote before they approve a factual claim."},
+    {"start_ms": 18000, "end_ms": 27000, "speaker": "host", "text": "The generator can suggest hooks, captions, search terms, and thumbnail copy."},
+    {"start_ms": 27000, "end_ms": 36000, "speaker": "guest", "text": "A risk gate should flag a number that does not appear in the source transcript."},
+    {"start_ms": 36000, "end_ms": 45000, "speaker": "host", "text": "The final publishing decision stays with the human editor."}
+  ],
+  "risk_probes": [
+    {"text": "Editors need the source timestamp and quote.", "expected_supported": true},
+    {"text": "This workflow always doubles audience growth.", "expected_supported": false}
+  ]
+}

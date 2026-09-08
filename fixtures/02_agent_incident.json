@@ -1,0 +1,16 @@
+{
+  "transcript_id": "agent-incident-02",
+  "title": "Agent 故障归因需要证据",
+  "language": "zh-CN",
+  "utterances": [
+    {"start_ms": 0, "end_ms": 8000, "speaker": "operator", "text": "语音 Agent 完成了通话，但工具调用选择了错误的服务编号。"},
+    {"start_ms": 8000, "end_ms": 16000, "speaker": "engineer", "text": "工具调用成功不代表任务成功，我们需要检查服务编号和确认意图。"},
+    {"start_ms": 16000, "end_ms": 24000, "speaker": "operator", "text": "同一段输入要分别运行基线和候选版本，避免输入差异影响判断。"},
+    {"start_ms": 24000, "end_ms": 32000, "speaker": "engineer", "text": "候选版本只有通过证据完整性和人工确认门，才进入下一步评审。"},
+    {"start_ms": 32000, "end_ms": 40000, "speaker": "operator", "text": "这仍然是合成故障，不能描述成真实客户事故。"}
+  ],
+  "risk_probes": [
+    {"text": "工具调用成功不代表任务成功。", "expected_supported": true},
+    {"text": "该系统已经服务一万名真实客户。", "expected_supported": false}
+  ]
+}

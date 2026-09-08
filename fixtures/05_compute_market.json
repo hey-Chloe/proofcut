@@ -1,0 +1,16 @@
+{
+  "transcript_id": "compute-market-05",
+  "title": "GPU 资源匹配的真实边界",
+  "language": "zh-CN",
+  "utterances": [
+    {"start_ms": 0, "end_ms": 8500, "speaker": "buyer", "text": "训练任务需要两张 GPU、每张至少四十八 GB 显存，并限制总预算。"},
+    {"start_ms": 8500, "end_ms": 17000, "speaker": "planner", "text": "匹配器先做 GPU 数量、显存、地区和预算硬过滤，再解释排序分数。"},
+    {"start_ms": 17000, "end_ms": 25500, "speaker": "buyer", "text": "一个可到达的报价接口不代表资源已经预订，也不代表训练会盈利。"},
+    {"start_ms": 25500, "end_ms": 34000, "speaker": "planner", "text": "预订、供应、运行心跳和结算应该保留不同状态，不能合并成一个成功标签。"},
+    {"start_ms": 34000, "end_ms": 42500, "speaker": "buyer", "text": "如果当前报价是演示数据，页面必须明确显示，不伪装成实时市场。"}
+  ],
+  "risk_probes": [
+    {"text": "训练任务需要两张 GPU、每张至少四十八 GB 显存。", "expected_supported": true},
+    {"text": "平台目前拥有5000张真实GPU。", "expected_supported": false}
+  ]
+}
