@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proofcut"
+version = "0.2.0"
+description = "Deterministic evidence-linked creator content packs"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+proofcut = "proofcut.cli:main"
+proofcut-demo = "proofcut.web:main"
+
+[tool.setuptools.package-data]
+proofcut = ["web_assets/*.html", "web_assets/*.css", "web_assets/*.js", "web_assets/*.json"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["proofcut*"]

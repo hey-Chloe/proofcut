@@ -1,0 +1,40 @@
+# Python build and interpreter artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and secrets
+.venv/
+venv/
+.env
+.env.*
+
+# OS and editor files
+.DS_Store
+*.swp
+*.swo
+
+# Transient demo and QA outputs. Keep frozen evidence listed below.
+outputs/*
+!outputs/LOCAL_MVP_RECEIPT.json
+!outputs/MANIFEST.sha256
+!outputs/PACKAGE_SMOKE.json
+!outputs/PUBLICATION_MANIFEST.sha256
+!outputs/PUBLICATION_SCAN.json
+!outputs/benchmark_report.json
+!outputs/eval_report.json
+!outputs/example/
+!outputs/example/content_pack.json
+!outputs/example/evidence_ledger.csv
+
+# Local release receipts and source archive are intentionally not committed.
+outputs/SUBMISSION_READINESS.json
+outputs/PUBLICATION_MANIFEST.sha256
+outputs/PUBLICATION_SCAN.json
+outputs/PUBLICATION_ARCHIVE_RECEIPT.json
+outputs/proofcut-publication-source.tar.gz
