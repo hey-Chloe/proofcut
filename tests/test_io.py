@@ -47,6 +47,13 @@ class InputTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 load_transcript(path)
 
+    def test_rejects_non_object_json_utterances(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "bad.json"
+            path.write_text(json.dumps({"utterances": [None, 7, "text"]}), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "utterance 0 must be an object"):
+                load_transcript(path)
+
     def test_rejects_empty_text(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "empty.txt"
