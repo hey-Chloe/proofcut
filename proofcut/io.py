@@ -30,6 +30,8 @@ def _validate_utterances(raw: list[dict[str, Any]]) -> list[dict[str, Any]]:
     utterances: list[dict[str, Any]] = []
     last_end = -1
     for index, item in enumerate(raw):
+        if not isinstance(item, dict):
+            raise ValueError(f"utterance {index} must be an object")
         text = str(item.get("text", "")).strip()
         start_ms = item.get("start_ms")
         end_ms = item.get("end_ms")
