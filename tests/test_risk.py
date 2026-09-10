@@ -14,6 +14,18 @@ class RiskGateTests(unittest.TestCase):
         result = assess_claim("This saves 90% of editing time.", "This helps editors check source text.")
         self.assertIn("UNSUPPORTED_NUMBER", result["risk_codes"])
 
+    def test_flags_changed_chinese_adjacent_percentage(self):
+        source = "这次流程优化后，我们的整体工作效率提升了10%，并且保持了原来的交付标准。"
+        result = assess_claim("整体工作效率提升了90%，并且保持原来的交付标准。", source)
+        self.assertFalse(result["supported"])
+        self.assertIn("UNSUPPORTED_NUMBER", result["risk_codes"])
+        self.assertEqual(result["missing_numbers"], ["90%"])
+
+    def test_allows_supported_mixed_language_number(self):
+        source = "Release v2 kept 3 safeguards and 准确率提升10%。"
+        result = assess_claim("准确率提升10%，with 3 safeguards.", source)
+        self.assertNotIn("UNSUPPORTED_NUMBER", result["risk_codes"])
+
     def test_does_not_treat_display_timestamp_as_claim_number(self):
         result = assess_claim("来源 00:10–00:30", "来源")
         self.assertNotIn("UNSUPPORTED_NUMBER", result["risk_codes"])
