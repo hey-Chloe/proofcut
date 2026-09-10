@@ -54,6 +54,15 @@ class InputTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "utterance 0 must be an object"):
                 load_transcript(path)
 
+    def test_rejects_boolean_timestamps(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "bad.json"
+            path.write_text(json.dumps({"utterances": [
+                {"start_ms": False, "end_ms": True, "text": "a"}
+            ]}), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "integer start_ms/end_ms"):
+                load_transcript(path)
+
     def test_rejects_empty_text(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "empty.txt"
