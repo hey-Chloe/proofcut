@@ -8,7 +8,7 @@ from typing import Any
 from .text import normalize, tokens
 
 
-NUMBER_RE = re.compile(r"\b\d+(?:\.\d+)?%?\b")
+NUMBER_RE = re.compile(r"(?<![A-Za-z0-9_.])\d+(?:\.\d+)?%?(?![A-Za-z0-9_.])")
 TIME_RANGE_RE = re.compile(r"\b\d{1,2}:\d{2}(?::\d{2})?(?:\s*[–-]\s*\d{1,2}:\d{2}(?::\d{2})?)?\b")
 ABSOLUTES = ("100%", "唯一", "保证", "绝对", "完全消除", "zero risk", "always", "never fails")
 WRAPPER_TOKENS = {
