@@ -37,7 +37,7 @@ def _validate_utterances(raw: list[dict[str, Any]]) -> list[dict[str, Any]]:
         end_ms = item.get("end_ms")
         if not text:
             raise ValueError(f"utterance {index} has empty text")
-        if not isinstance(start_ms, int) or not isinstance(end_ms, int):
+        if not type(start_ms) is int or not type(end_ms) is int:
             raise ValueError(f"utterance {index} needs integer start_ms/end_ms")
         if start_ms < 0 or end_ms <= start_ms:
             raise ValueError(f"utterance {index} has invalid time range")
