@@ -66,6 +66,13 @@ class WebRouteTests(unittest.TestCase):
         self.assertEqual(bad_status, HTTPStatus.BAD_REQUEST)
         self.assertEqual(bad_result["status"], "ERROR")
 
+    def test_run_route_rejects_malformed_utterance_items(self):
+        content = json.dumps({"utterances": [None]})
+        status, result = route_run(json.dumps({"filename": "bad.json", "content": content}).encode())
+        self.assertEqual(status, HTTPStatus.BAD_REQUEST)
+        self.assertEqual(result["status"], "ERROR")
+        self.assertIn("utterance 0 must be an object", result["error"])
+
 
 if __name__ == "__main__":
     unittest.main()
